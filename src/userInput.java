@@ -16,11 +16,12 @@ public class userInput {
 		if(answer1.equals(""))
 		{
 		System.out.println("Error: First name can not be empty");
+		
 		}
 		
 		else
 		{
-			System.out.println("Your name is your last name?");
+			System.out.println("what is your last name?");
 			
 			String answer2 = in.nextLine();
 			
