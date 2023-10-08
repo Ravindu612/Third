@@ -7,20 +7,32 @@ public class userInput {
 
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("What is your name?");
+		System.out.println("What is your first name?");
 		
-		String answer = in.nextLine();
+		String answer1 = in.nextLine();
 		
 		//printing the name
 		
-		if(answer.equals(""))
+		if(answer1.equals(""))
 		{
-		System.out.println("Error");
+		System.out.println("Error: First name can not be empty");
 		}
 		
 		else
 		{
-			System.out.println("Your name is " + answer + ".");
+			System.out.println("Your name is your last name?");
+			
+			String answer2 = in.nextLine();
+			
+			if(answer2.equals(""))
+			{
+			System.out.println("Error: Last name can not be empty");
+			}
+			
+			else
+			{
+				System.out.println("Full Name: " + answer1 + " " + answer2);
+			}
 		}
 	}
 
