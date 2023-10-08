@@ -7,17 +7,21 @@ public class userInput {
 
 		Scanner in = new Scanner(System.in);
 		
+		//Asking the first name of the user.
+		
 		System.out.println("What is your first name?");
 		
 		String answer1 = in.nextLine();
 		
-		//printing the name
+		//printing an error if the first name is empty.
 		
 		if(answer1.equals(""))
 		{
 		System.out.println("Error: First name can not be empty");
 		
 		}
+		
+		//Asking the second name of the user, if the first name entered correctly.
 		
 		else
 		{
@@ -29,6 +33,8 @@ public class userInput {
 			{
 			System.out.println("Error: Last name can not be empty");
 			}
+			
+			//Printing the full name by combining both first name and last name.
 			
 			else
 			{
